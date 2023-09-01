@@ -1,0 +1,176 @@
+﻿
+@{
+    ViewData["Title"] = "BackUpAndRestore";
+    Layout = "~/Views/Shared/_LayoutProjectDetails.cshtml";
+}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>SQL Toplu Yedekleme ve Yedek Yükleme</h2>
+                <ol>
+                    <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                    <li><a href="/Home/Index#portfolio">Projeler</a></li>
+                    <li>Proje Detayları</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- Breadcrumbs Section -->
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss2.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss3.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss9.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss10.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss11.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss6.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss7.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss8.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/sqlss4.png" alt="">
+                            </div>
+                            
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3 style="color:#bb4343">Proje Bilgisi</h3>
+                        <ul>
+                            <li><strong>Kategori</strong>:C# FORM</li>
+                            <li><strong>GitHub Adresi</strong>: <a href="#">www.example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-info">
+                        <h5 style="color:#bb4343"><b>Projenin Amacı</b></h5>
+
+                        <p>
+
+                          Verilerinizi kolay ve hızlıca yedeklemenizi ve geri yüklemenizi sağlayan bir projedir. Aynı zamanda Zamanlayıcı özelliği sayesinde bu işlemleri otomatik tekrarlar.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="portfolio-info">
+                            <p>
+                                <h5 style="color:#bb4343"><b>Proje Özellikleri</b></h5>
+                                <hr />
+                                <ol>
+                                    <li>Tekli Yedekleme</li>
+                                    <li>Çoklu Yedekleme</li>
+                                    <li>Tekli Yedek Yükleme</li>
+                                    <li>Çoklu Yedek Yükleme</li>
+                                    <li>Belirtilen Zaman Aralığında Sürekli Yedekleme</li>
+                                    <li>Lisans Kontrolü</li>
+                                    <li>Bilgileri Kaydetme</li>
+                                    <li>İşlem Sonrası Mail Gönderme</li>
+                                </ol>
+                            </p>
+                            <p>
+                                <h5 style="color:#bb4343;margin-top:30px;"><b>Bilgileri Kaydetme</b></h5>
+                                <hr />
+                                Zamanlayıcı ile toplu yedekleme yapabilmek için öncelikle bilgilerinizi kaydetmeniz gerekir. Bilgilerinizi <b>Ayarlar</b> bölümünden yapmanız gerekir.Bilgi Kaydetme Adımları:
+                                <ul style="list-style:unset;padding:20px;">
+                                    <li><b class="redTitle">Zamanı Kaydet:</b> Ne kadar süre sonra tekrar yedek alması gerektiğini seçiniz. (Örn:Günde 1 kez) </li>
+                                    <li><b class="redTitle">Bağlantıyı Kaydet:</b> Sunucu İsminizi Girmelisiniz.Eğer <b>kullanıcı adı ve şifre olmadan bağlantı yapacaksanız</b> sadece Sunucu adını doldurun. </li>
+                                    <li><b class="redTitle">Dizin Kaydet:</b> Yedek dosyalarının kaydedileceği yer </li>
+                                    <li><b class="redTitle">Veri Tabanı Kaydet:</b> Sadece <b>Tekli Yedekleme</b> işleminde <b>Zamanlayıcı</b> kullanacaksanız bu bölüme Veri Tabanı isminizi girebilirsiniz </li>
+                                    <li><b class="redTitle">E-Posta Kaydet:</b> Toplu Yedek işlemi tamamlandıktan sonra mesaj gönderilecek mail adresi</li>
+                                    
+                                </ul>
+                                Bu İşlemleri <b>Yukarıda Belirtildiği gibi</b> Yaptıysanız Bilgilerinizi Toplu Yedekleme Sistemi İçin Kullanabilirsiniz.
+                            </p>
+                            <p>
+                                <h5 style="color:#bb4343;margin-top:60px;"><b>Toplu Yedek Alma</b></h5>
+                                <hr />
+                                Bilgilerinizi Kaydettikten Sonra Toplu Yedek İşlemini başlatmak için:
+                                <ol style="padding:20px;">
+                                    <li><b class="redTitle">Hiçbir İşlem yapmadan</b> <b>Toplu Yedek</b> Kutucuğunu işaretleyin</li>
+                                    <li><b class="redTitle">Toplu Yedek kutucuğu işaretliyken</b> <b>Zamanlayıcıyı Çalıştır</b> kutucuğunu işaretleyin</li>
+                                   
+
+                                </ol>
+                                Bu 2 adımı da doğru şekilde yaparsanız yedekleme işlemi başlar. Yedekleme işlemini <b class="redTitle">durdurmak</b> isterseniz eğer <b>Zamanlayıcıyı Çalıştır</b> kutucuğunun işaretini kaldırabilirsiniz.
+                            </p>
+                            <p>
+                                <h5 style="color:#bb4343;margin-top:60px;"><b>Tekli Yedek Alma</b></h5>
+                                <hr />
+                                Bilgilerinizi Kaydettikten Sonra Tekli Yedek İşlemini başlatmak için:
+                                <ol style="padding:20px;">
+                                    <li>Bilgileri Getir Kutucuğunu işaretleyerek kayıtlı bilgilerinizin gelmesini sağlayın.</li>
+                                    <li><b>Bağlantı Test</b> butonuna tıklayın. Eğer Bağlantı bilgileriniz doğruysa yan taraftaki ekranda Bağlantı Başarılı yazacaktır.</li>
+                                    <li>Bağlantı Başarılıysa <b>Veritabanı</b> kısmından yedeklemek istediğiniz Veri Tabanını Seçin</li>
+                                    <li><b>Dizin Getir</b> Kutucuğunu işaretleyerek yedeğin kaydedileceği dizini belirleyin.</li>
+                                    <li>Ardından <b>Gözat</b> Butonuna tıklayarak yedek dosyasına bir isim verin.</li>
+                                    <li>Son olarak <b>Başlat</b> butonuna tıklayarak yedekleme işlemini başlatın.</li>
+
+
+                                </ol>
+                                Bu adımları doğru şekilde yaparsanız yedekleme işlemi başlar. Ancak Tekli Yedeklemelerde yedeklenecek dosyaya isim vermezseniz <b class="redTitle">işlem gerçekleşmez.</b>
+                            </p>
+                            <p>
+                                <h5 style="color:#bb4343;margin-top:60px;"><b>Yedek Geri Yükleme</b></h5>
+                                <hr />
+                                Yedek Geri Yükleme işlemi için öncelikle bir <b>".bak"</b> dosyasına ihtiyacınız var. Bunu da Yedek Alma İşlemiyle gerçekleştirebilirsiniz.Eğer yedek dosyasına sahipseniz:
+                                <ol style="padding:20px;">
+                                    <li><b>İşlemler</b> bölümünden <b>Yedek Yükleme</b> seçeneğine tıklayın.</li>
+                                    <li>Açılan Bölümde <b>Bağlantıyı Getir</b> kutucuğunu işaretleyerek Bağlantı bilginizi getirin.</li>
+                                    <li><b>Yedek Dosyalarını Seç</b> butonuna tıklayın ve ardından yedek alınacak dosyayı seçin.</li>
+                                    <li>Eğer <b>Toplu Yedek Yükleme</b> işlemi yapacaksanız birden fazla dosya seçebilirsiniz(Ctrl+A ya da Ctrl+Mouse LMB )</li>
+                                    <li>Seçim İşlemi Bittikten sonra seçilen yedek dosyaları ekranda gözükecektir.<b>İşlemi Başlat</b> butonuna tıklayın.</li>
+                                   
+
+
+                                </ol>
+                                Bu adımları doğru şekilde yaparsanız Yedek Geri Yükleme işlemi tamamlanır.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+</main><!-- End #main -->

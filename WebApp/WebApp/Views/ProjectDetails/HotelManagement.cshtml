@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "HotelManagement";
+    Layout = "~/Views/Shared/_LayoutProjectDetails.cshtml";
+}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Otel Yönetim Paneli</h2>
+                <ol>
+                    <li><a href="@Url.Action("Index","Home")">Anasayfa</a></li>
+                    <li><a href="/Home/Index#portfolio">Projeler</a></li>
+                    <li>Proje Detayları</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- Breadcrumbs Section -->
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/otelssyeni.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/otelss2.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/otelss3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/WebUITheme/assets/img/portfolio/otelss4.png" alt="">
+                            </div>
+                            
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3 style="color:#bb4343">Proje Bilgisi</h3>
+                        <ul>
+                            <li><strong>Kategori</strong>: C# FORM</li>
+                            <li><strong>GitHub Adresi</strong>: <a href="#">www.example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-info">
+                        <h5 style="color:#bb4343"><b>Projenin Amacı</b></h5>
+
+                        <p>
+                            Ötel Yönetim Sistemidir. Otelinizdeki odaları,müşterileri,oda kontenjanlarını,yatak tiplerini,rezervasyon bilgilerini ve daha fazlasını tek bir yerden yönetebilmenizi sağlar.
+                        </p>
+                    </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="portfolio-info">
+                            <p>
+                                <h5 style="color:#bb4343"><b>Proje Özellikleri</b></h5>
+                                <hr />
+                                <ul style="list-style:unset">
+                                    <li>Filtreleme sistemi sayesinde <b>hangi katta kaç oda olduğunu,</b> o kattaki <b>odaların durumlarını</b> görmenizi sağlar.</li>
+                                    <li>Belirlediğiniz Fiyat Çarpanı Verilerini Kullanarak fiyatı otomatik belirler.</li>
+                                    <li>Çocuk sayısı ve çocuk yaşına göre fiyatı hesaplar.</li>
+                                </ul>
+                                <span class="redTitle"><b>Dipnot:</b></span> <b>İlk .Net Core projem</b> olduğu için özellik bakımından zayıf olabilir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img style="margin-top:30px" width="100%" src="/WebUITheme/assets/img/panel.png" alt="Otel Yönetim Paneli" />
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+</main><!-- End #main -->
